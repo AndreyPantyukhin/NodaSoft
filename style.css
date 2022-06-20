@@ -1,0 +1,183 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: auto;
+    width: 1200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background: #C0DBD9;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.header {
+    background: #7FAFF7;
+    padding: 30px;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #A5C7F9;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .close {
+    padding: 8px 15px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    background: #7FAFF6;
+    border-radius: 5px;
+    color: #fff;
+
+}
+
+.popup .content {
+    margin: 169px 117px;
+    font-size: 53px;
+    line-height: 62px;
+    color: #000000;
+    overflow: auto;
+}
+
+.main {
+    background: #B3F95A;
+}
+
+.main-list {
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: my-counter; /* Задаём имя счетчика */
+  }
+  .main-list-item::before {
+    content: counter(my-counter); /* Выводим число */
+    counter-increment: my-counter; /* Увеличиваем значение счётчика */
+  }
+
+.main-list-item {
+    padding-top: 68px;
+    padding-bottom: 68px;
+    height: 198px;
+    color: #fff;
+    font-size: 53px;
+    line-height: 62px;
+    background: #8AD191;
+}
+
+.one {
+    margin-bottom: 15px;
+    padding-right: 15.4%;
+    padding-left: 15.4%;
+}
+
+.two {
+    margin-bottom: 15px;
+    padding-right: 23.9%;
+    padding-left: 23.9%;
+}
+
+.three {
+    margin-bottom: 15px;
+    padding-right: 5.5%;
+    padding-left: 5.5%;
+}
+
+.four {
+    padding-right: 41.2%;
+    padding-left: 41.2%;
+}
+
+.five {
+    padding-right: 5.5%;
+    padding-left: 5.5%;
+}
+
+.hero {
+    background: #88B5BF;
+}
+
+.hero-list {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    list-style-position: inside;
+}
+
+.hero-list-item {
+    width: 23%;
+    height: 199px;
+    background: #0D89B0;
+}
+
+.footer {
+    margin-top: 100px;
+   
+    height: 100px;
+    background: #7FAFF7;
+}
